@@ -9,7 +9,10 @@ class Text extends PureComponent{
     }
 }
 
-
+/**
+ * PureComponent 组件 在复杂数据结构下数据发现改变时 Pure组件不会触发render
+ * 而使用解构{{...data}} 时 父组件任务render 子组件都会render； 应避免使用解构
+ */
 export default class PureIndex extends React.Component{
 
     state={
